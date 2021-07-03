@@ -5,18 +5,18 @@ import logo from "./assets/initech.jpg";
 export default function Header(props) {
   return (
     <View style={styles.header}>
-        <View style={styles.one}>
-            <Image source={logo} style={{height: 50, width: 80, resizeMode: 'stretch', marginRight: 15}}/>
-            <Text style={styles.text}>{props.headerDisplay}</Text>
-        </View>
-        <View style={styles.two}>
-            <View style={styles.menu}>
-                <Text>Home</Text>
-                <Text>News</Text>
-                <Text>Quotes</Text>
-                <Text>About</Text>
-            </View>
-        </View>
+      <View style={styles.one}>
+        <Image
+          source={logo}
+          style={{
+            height: 50,
+            width: 80,
+            resizeMode: "stretch",
+            marginRight: 15,
+          }}
+        />
+        <Text style={styles.text}>{props.headerDisplay}</Text>
+      </View>
     </View>
   );
 }
@@ -42,21 +42,21 @@ const styles = StyleSheet.create({
   logo: {
     height: 30,
     width: "100%",
-    borderColor: 'red',
+    borderColor: "red",
     borderWidth: 1,
   },
   one: {
-      height: 70,
-      width: '100%',
-      flexDirection: 'row',
-      alignItems: 'center',
-      flexWrap: 'wrap',
-      backgroundColor:'white',
-      padding: 10
+    height: 70,
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    flexWrap: "wrap",
+    backgroundColor: "white",
+    padding: 10,
   },
   two: {
     height: 50,
-    width: '100%',
-    backgroundColor:'white'
-}
+    width: "100%",
+    backgroundColor: "white",
+  },
 });
